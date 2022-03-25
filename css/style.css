@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+@keyframes move-tesla {
+  0%   {background-position: 225px 15px}
+  100% {background-position: 25px 15px}
+}
+.request-tesla-flex {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40vh;
+  justify-content: center;
+}
+.request-tesla-bg {
+  background: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.request-tesla-wrapper {
+  background: #010101;
+  box-shadow: none;
+  overflow: hidden;
+  border: 0;
+  color: #f1f1f1;
+  height: 25px;
+  min-width: 130px;
+  text-align: center;
+  padding: 25px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 100px;
+  padding: 1.5rem 4rem;
+  font-size: 19px;
+  cursor: pointer;
+  box-shadow: 0 6px 30px -10px #010101;
+  transition: all .2s;
+  background-image: url('https://i.imgur.com/XaK8Eqg.png');
+  background-repeat: no-repeat;
+  background-position: 225px 15px
+}
+.request-tesla-wrapper:hover {
+  box-shadow:  0 6px 30px -15px #010101;
+}
+
+.payment-complete {
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  -webkit-animation: move-tesla 2.0s forwards; /* for less modern browsers */
+        animation: move-tesla 2.0s forwards;
+}
+
+.im-too-lazy-to-handle-another-click {pointer-events: none}
+
+
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #ffffff;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+ color: #ffffff;
+position: relative;
+font-size: 3px;
+transform: translateY(2px) translateX(0px);
+display: inline-block;
+margin-right: 15px;
+margin-left: -15px;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+.disclaimer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
